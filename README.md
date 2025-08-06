@@ -29,3 +29,36 @@ You can view a live demo of the project here:
 ## 📂 Project Structure
 
 The project follows a clean and logical file structure:
+<img width="652" height="286" alt="image" src="https://github.com/user-attachments/assets/09fa4689-bb6b-4128-9af0-1d750c9a7f9e" />
+## ⚙️ How to Run Locally
+
+To get a local copy of this project up and running, follow these simple steps.
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/](https://github.com/)[Your-GitHub-Username]/[Your-Repository-Name].git
+    ```
+
+2.  **Navigate to the project directory:**
+    ```bash
+    cd bundle-builder
+    ```
+
+3.  **Open `index.html`:**
+    Simply open the `index.html` file in your web browser. You can do this by double-clicking the file or by using a live server extension in your code editor (like VS Code's Live Server).
+
+## 📝 Development Guidelines Met
+
+-   [x] No external frameworks (e.g., React, Vue, jQuery) were used.
+-   [x] The UI logic is handled entirely by JavaScript.
+-   [x] Semantic HTML5 elements are used for a well-structured document.
+-   [x] The UI is responsive and adapts to mobile screens.
+-   [x] Code is commented to explain key functionalities.
+-   [x] The CTA button logs the selected products to the console when clicked.
+
+## ✒️ Author
+
+-   **Gorrepati Praveen Kumar** - [https://my-profile-phi-liart.vercel.app/]
+
+---
+_This project was created as part of a technical assessment to build a responsive, interactive UI from a design mockup._
