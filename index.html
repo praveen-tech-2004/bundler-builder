@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundle Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="bundle-builder">
+        <div class="bundle-container">
+
+            <header class="bundle-header">
+                <h2>Buy 3 and Save 30%</h2>
+            </header>
+
+            <section class="product-bundle">
+                <div class="grid-custom">
+                    <article class="product-card" data-id="1" data-price="150" data-name="Tie-Dye Lounge Set">
+                        <img src="assets/product-1.jpg" alt="A model wearing a Tie-Dye Lounge Set">
+                        <div class="product-details">
+                            <h3 class="product-title">Tie-Dye Lounge Set</h3>
+                            <p class="product-price">$150.00</p>
+                            <button class="add-to-bundle-btn" aria-label="Add Tie-Dye Lounge Set to Bundle">Add to Bundle <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="product-card" data-id="2" data-price="150" data-name="Sunburst Tracksuit">
+                        <img src="assets/product-2.jpg" alt="A model wearing a Sunburst Tracksuit">
+                        <div class="product-details">
+                            <h3 class="product-title">Sunburst Tracksuit</h3>
+                            <p class="product-price">$150.00</p>
+                            <button class="add-to-bundle-btn" aria-label="Add Sunburst Tracksuit to Bundle">Add to Bundle <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="product-card" data-id="3" data-price="150" data-name="Retro Red Streetwear">
+                        <img src="assets/product-3.jpg" alt="A model wearing Retro Red Streetwear">
+                        <div class="product-details">
+                            <h3 class="product-title">Retro Red Streetwear</h3>
+                            <p class="product-price">$150.00</p>
+                            <button class="add-to-bundle-btn" aria-label="Add Retro Red Streetwear to Bundle">Add to Bundle <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="product-card" data-id="4" data-price="150" data-name="Urban Sportswear Combo">
+                        <img src="assets/product-4.jpg" alt="A model wearing Urban Sportswear Combo">
+                        <div class="product-details">
+                            <h3 class="product-title">Urban Sportswear Combo</h3>
+                            <p class="product-price">$150.00</p>
+                            <button class="add-to-bundle-btn" aria-label="Add Urban Sportswear Combo to Bundle">Add to Bundle <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="product-card" data-id="5" data-price="150" data-name="Oversized Knit & Coat">
+                        <img src="assets/product-5.jpg" alt="A model wearing Oversized Knit & Coat">
+                        <div class="product-details">
+                            <h3 class="product-title">Oversized Knit & Coat</h3>
+                            <p class="product-price">$150.00</p>
+                            <button class="add-to-bundle-btn" aria-label="Add Oversized Knit & Coat to Bundle">Add to Bundle <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="product-card" data-id="6" data-price="150" data-name="Chic Monochrome Blazer">
+                        <img src="assets/product-6.jpg" alt="A model wearing a Chic Monochrome Blazer">
+                        <div class="product-details">
+                            <h3 class="product-title">Chic Monochrome Blazer</h3>
+                            <p class="product-price">$150.00</p>
+                            <button class="add-to-bundle-btn" aria-label="Add Chic Monochrome Blazer to Bundle">Add to Bundle <span>+</span></button>
+                        </div>
+                    </article>
+                </div>
+
+                <aside class="bundle-sidebar">
+                    <div class="sticky-element">
+                        <header class="sidebar-header">
+                            <h3>Create a Bundle</h3>
+                            <p class="bundle-status">Add at least 3 products and Save 30%.</p>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 0%;"></div>
+                            </div>
+                        </header>
+
+                        <div class="selected-products-list">
+                        </div>
+
+                        <div class="bundle-summary">
+                            <div class="discount-row">
+                                <span>Discount</span>
+                                <span class="discount-amount">-$0.00 (30%)</span>
+                            </div>
+                            <div class="subtotal-row">
+                                <span>Subtotal</span>
+                                <span class="subtotal-amount">$0.00</span>
+                            </div>
+                        </div>
+
+                        <button class="cta-button" disabled>
+                            Add 3 items to Proceed
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.1905 9.0306L7.19051 14.0306C7.04961 14.1715 6.85852 14.2506 6.65926 14.2506C6.46 14.2506 6.26891 14.1715 6.12801 14.0306C5.98711 13.8897 5.90796 13.6986 5.90796 13.4993C5.90796 13.3001 5.98711 13.109 6.12801 12.9681L10.5974 8.49997L6.12926 4.0306C6.0595 3.96083 6.00415 3.87801 5.9664 3.78686C5.92864 3.69571 5.90921 3.59801 5.90921 3.49935C5.90921 3.40069 5.92864 3.30299 5.9664 3.21184C6.00415 3.12069 6.0595 3.03786 6.12926 2.9681C6.19902 2.89833 6.28185 2.84299 6.373 2.80524C6.46415 2.76748 6.56185 2.74805 6.66051 2.74805C6.75917 2.74805 6.85687 2.76748 6.94802 2.80524C7.03917 2.84299 7.122 2.89833 7.19176 2.9681L12.1918 7.9681C12.2616 8.03786 12.317 8.12072 12.3547 8.21193C12.3925 8.30313 12.4118 8.4009 12.4117 8.49961C12.4116 8.59832 12.392 8.69603 12.354 8.78715C12.3161 8.87827 12.2605 8.961 12.1905 9.0306Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                </aside>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

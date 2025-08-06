@@ -1,0 +1,389 @@
+:root {
+  --white: #FFFFFF;
+  --cod-gray: #111111;
+  --shark: #24272B;
+  --dove-gray: #666666;
+  --tundora: #444444;
+  --gallery: #EBEBEB;
+  --wild-sand: #F5F5F5;
+}
+
+body {
+  font-family: 'Instrument Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  color: var(--cod-gray);
+  box-sizing: border-box;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: -1.224px;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.816px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* Main container layout */
+.bundle-builder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 127.5px;
+}
+
+.bundle-container {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
+.bundle-header {
+  width: 100%;
+  text-align: center;
+}
+
+/* Product grid and sidebar layout */
+.product-bundle {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.grid-custom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  row-gap: 48px;
+  flex-grow: 1;
+}
+
+/* Product Card styles */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card img {
+  width: 100%;
+  height: 326.66px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5px;
+}
+
+.product-title {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  color: var(--cod-gray);
+  margin-bottom: 9.7px;
+}
+
+.product-price {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  color: var(--dove-gray);
+  margin-bottom: 15px;
+}
+
+.add-to-bundle-btn {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid var(--cod-gray);
+  background-color: var(--gallery);
+  color: var(--shark);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.36px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.add-to-bundle-btn:hover {
+  background-color: var(--dove-gray);
+}
+
+/* Added to Bundle state */
+.add-to-bundle-btn.added {
+  background-color: var(--tundora);
+  border-color: var(--tundora);
+  color: var(--white);
+}
+
+/* Sidebar styles */
+.bundle-sidebar {
+  width: 360px;
+  flex-shrink: 0;
+}
+
+.sticky-element {
+  position: sticky;
+  top: 20px;
+  box-sizing: border-box;
+  padding: 31.25px 27px 32.01px;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 2px solid var(--cod-gray);
+}
+
+/* Sidebar header styles */
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.bundle-status {
+  font-size: 15px;
+  line-height: 26px;
+  color: var(--tundora);
+  margin-bottom: 17px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 5px;
+  background: var(--gallery);
+  border-radius: 99px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--cod-gray);
+  border-radius: 99px;
+  transition: width 0.3s ease;
+}
+
+/* Selected products list */
+.selected-products-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.selected-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.selected-item img {
+  width: 88.8px;
+  height: 88.8px;
+  object-fit: cover;
+}
+
+.item-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  word-break: break-word;
+}
+
+.item-name {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: var(--cod-gray);
+}
+
+.item-price {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: var(--dove-gray);
+}
+
+.item-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Quantity stepper styles */
+.quantity-input-bundle {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 35px;
+  background: var(--wild-sand);
+  border: 1px solid var(--gallery);
+}
+
+.quantity-input-bundle button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0 10px;
+  color: var(--cod-gray);
+}
+
+.quantity-input-bundle input {
+  width: 38px;
+  text-align: center;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  color: var(--cod-gray);
+  padding: 0;
+  -moz-appearance: textfield;
+}
+
+.quantity-input-bundle input::-webkit-outer-spin-button,
+.quantity-input-bundle input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove button style */
+.remove-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.remove-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--tundora);
+}
+
+/* Summary section */
+.bundle-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 0;
+  border-top: 1px solid var(--gallery);
+}
+
+.discount-row,
+.subtotal-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.subtotal-row {
+  font-weight: 600;
+}
+
+/* CTA button */
+.cta-button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  background-color: var(--gallery);
+  color: var(--tundora);
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.36px;
+  cursor: not-allowed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Enabled state for CTA button */
+.cta-button:not(:disabled) {
+  background-color: var(--cod-gray);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.cta-button:not(:disabled):hover {
+  background-color: var(--shark);
+}
+
+.cta-button svg {
+  width: 17px;
+  height: 17px;
+}
+
+.add-to-bundle-btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 1200px) {
+  .bundle-builder {
+    padding: 40px 20px;
+  }
+
+  .product-bundle {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .grid-custom {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    row-gap: 30px;
+  }
+
+  .bundle-sidebar {
+    width: 100%;
+  }
+
+  .sticky-element {
+    position: static;
+    top: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  .grid-custom {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
